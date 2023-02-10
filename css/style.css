@@ -158,7 +158,21 @@ img {
 
   padding-top: 188px;
   padding-bottom: 188px;
+  width: 1440px;
+  height: 600px;
+  /* background-image: url(/images/Dark-bg.png), url(/images/people-office\ 1.jpg); */
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office\ 1.jpg);
+  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -431,4 +445,26 @@ img {
 .project-list {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+.advantages > .item::before {
+  display: block;
+  content: '';
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: var(--footer-logo-color);
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ 1.svg);
 }
