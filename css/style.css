@@ -171,6 +171,7 @@ img {
   background-position: center;
   margin-right: auto;
   margin-left: auto;
+  background-size: cover;
 }
 
 .hero-title {
@@ -453,6 +454,8 @@ img {
   padding-bottom: 32px;
   padding-left: 16px;
   border: 1px solid var(--footer-text-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .project-list {
   padding-top: 96px;
@@ -514,6 +517,7 @@ img {
 }
 .footer-list {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social {
@@ -529,7 +533,6 @@ img {
   border-radius: 50%;
   margin: 0;
   padding: 0;
-  border: none;
   color: var(--backgroud-filter-btn);
 }
 .social-footer {
@@ -551,13 +554,7 @@ img {
 }
 .client {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 72px;
   gap: 24px;
-  justify-content: space-between;
-  align-items: center;
-
   padding: 0;
 }
 .client-list {
