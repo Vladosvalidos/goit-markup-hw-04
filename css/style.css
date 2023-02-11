@@ -14,6 +14,8 @@
   --backgroud-filter-btn: #f4f4fd;
   --filter-btn-color: #4d5ae5;
   --footer-social-active: #31d0aa;
+  --client-border: #8e8f99;
+  --clien-link-color: #afb1b8;
 }
 
 body {
@@ -551,10 +553,39 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 72px;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
 }
 .client-list {
   list-style: none;
-  width: 168;
+  width: 168px;
   height: 88px;
-  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--client-border);
+  border-radius: 4px;
+}
+.client-item {
+  fill: currentColor;
+}
+
+.client-item {
+  fill: var(--client-border);
+}
+
+.client-item:hover,
+.client-item:focus {
+  fill: var(--active-color);
+}
+.client-list:hover,
+.client-list:focus {
+  border: 1px solid var(--active-color);
+  border-radius: 4px;
 }
