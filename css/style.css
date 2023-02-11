@@ -13,6 +13,7 @@
   --footer-text-color: #e7e9fc;
   --backgroud-filter-btn: #f4f4fd;
   --filter-btn-color: #4d5ae5;
+  --footer-social-active: #31d0aa;
 }
 
 body {
@@ -155,11 +156,9 @@ img {
 /* Hero */
 .hero {
   background-color: var(--background-hero-color);
-
+  width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
-  width: 1440px;
-  height: 600px;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
@@ -293,6 +292,7 @@ img {
   text-transform: uppercase;
   color: var(--footer-logo-color);
   text-decoration: none;
+  display: block;
 }
 .footer-logo-text {
   font-family: 'Raleway';
@@ -312,7 +312,18 @@ img {
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   width: 264px;
+  margin-right: 0;
   margin-top: 16px;
+  display: inline-block;
+}
+.social-text {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--hero-btn-text);
 }
 /* Portfolio */
 .filter-btn {
@@ -466,4 +477,84 @@ img {
 }
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
+}
+.social {
+  display: flex;
+  margin-top: 8px;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--filter-btn-color);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--backgroud-filter-btn);
+}
+.social-item {
+  list-style: none;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--active-color);
+}
+.social-icon {
+  fill: currentColor;
+}
+.footer-list {
+  display: flex;
+}
+
+.footer-social {
+  margin-left: 120px;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--backgroud-filter-btn);
+}
+.social-footer {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--footer-social-active);
+}
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-list {
+  list-style: none;
+  width: 168;
+  height: 88px;
+  border: 1px solid red;
 }
