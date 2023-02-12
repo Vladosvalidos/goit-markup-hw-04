@@ -564,28 +564,29 @@ img {
   list-style: none;
   width: 168px;
   height: 88px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--client-border);
-  border-radius: 4px;
 }
 .client-item {
   fill: currentColor;
 }
 
 .client-item {
-  fill: var(--client-border);
+  color: var(--clien-link-color);
 }
 
-.client-item:hover,
-.client-item:focus {
-  fill: var(--active-color);
-}
-.client-list:hover,
-.client-list:focus {
-  border: 1px solid var(--active-color);
+.client-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid var(--client-border);
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.client-link:is(:hover, :focus) {
+  border-color: var(--active-color);
+  border: 1px solid #404bbf;
+  border-radius: 4px;
+}
+.client-link:is(:hover, :focus) .client-item {
+  fill: var(--active-color);
 }
